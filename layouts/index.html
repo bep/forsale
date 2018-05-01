@@ -1,8 +1,8 @@
 {{ define "main" }}
+<section class="cf w-100 pa2-ns">
 {{ range .Site.RegularPages }}
 {{ $img := (.Resources.ByType "image").GetMatch "featured*" }}
-{{ $img := $img.Fill "400x400" }}
-<section class="cf w-100 pa2-ns">
+{{ $img := $img.Fill "500x500" }}
   <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
     <div class="aspect-ratio aspect-ratio--1x1">
       <img style="background-image:url({{ $img.Permalink }});" 
@@ -14,4 +14,5 @@
     </a>
   </article>
 {{ end }}
+</section>
 {{ end }}
