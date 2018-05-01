@@ -1,5 +1,5 @@
 {{ define "main" }}
-<section class="cf w-100 pa2-ns">
+<section class="cf w-100 pa2-ns flex flex-wrap">
 {{ range .Site.RegularPages }}
 {{ $img := (.Resources.ByType "image").GetMatch "featured*" }}
 {{ $img := $img.Fill "500x500" }}
@@ -10,7 +10,7 @@
     </div>
     <a href="{{ .Permalink }}" class="ph2 ph0-ns pb3 link db">
       <h3 class="f5 f4-ns mb0 black-90">{{ .Title }}</h3>
-      <h3 class="f6 f5 fw4 mt2 black-60">Subtitle of piece</h3>
+      <h3 class="f6 f5 fw4 mt2 black-60">Subtitle of piece {{ .Title }}</h3>
     </a>
   </article>
 {{ end }}
