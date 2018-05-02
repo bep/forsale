@@ -1,5 +1,9 @@
 +++
-title = "A This the Item #3 and then some more text"
+title = "Pentax DA* 16-50"
+finnURL = "https://foo"
+weight = 1
+tags = ["pentax"]
+sold = true
 
 [[resources]]
 src = "item3.jpg"
@@ -13,4 +17,4 @@ name = "item:counter"
 
 
 
-Some text about this **item**.
+Vêrtetta vidvinkelzoom.

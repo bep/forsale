@@ -1,5 +1,27 @@
 {{ define "main" }}
 <section class="cf w-100 pa2-ns flex flex-wrap">
+  <div class="fl w-100 w-50-l pr2-l pl2-ns mb4 mb0-l mb4">
+    <div class="pa4">
+      <h1 class="f4 f2-l fw7 mt0 pv3-l bb-l bb--black">{{ .Title }}{{ if .Params.sold }} <span class="f6 br2 ba bw1 ph3 pv2 mb2 dib red v-top">Solgt</span> {{ end }}{{ with .Params.finnURL }} <a href="{{ . | safeURL }}" class="link f4 v-bottom">Annonse på Finn.no</a>{{ end }}</h1>
+      <p class="lh-copy mt2 mt3-m mt4-l f5">
+        <span class="db-l measure-wide">
+          <article class="pb5 f4">
+            {{ .Content }}
+            {{ with .Params.finnURL }}Interessert? Ta kontakt via <a href="{{ . | safeURL }}" class="link f4">annonsen på Finn.no</a>.{{ end }}
+          </article>
+          {{ with .Params.tags }}
+          <ul class="list ph3 ph5-ns pv2 bt-l">
+            {{ range (sort .) }}
+            <li class="dib mr2">
+              <a  href="{{ printf "tags/%s" . | relURL }}" class="f6 ttu f5-ns b db pa2 link dim mid-gray">{{ . }}</a>
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </span>
+      </p>
+    </div>
+  </div>
   {{ range .Resources.ByType "image"}}
   <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
     <a data-fancybox="gallery" href="{{ .RelPermalink }}" class="ph2 ph0-ns pb3 link dim db">

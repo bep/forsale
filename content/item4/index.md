@@ -1,5 +1,7 @@
 +++
 title = "Item #4 abcde abcde abcde abcde abcde abcde abcde abcde abcde"
+finnURL = "https://foo"
+tags = ["pentax"]
 
 [[resources]]
 src = "item4.jpg"
