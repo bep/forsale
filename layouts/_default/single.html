@@ -9,15 +9,6 @@
             {{ .Content }}
             {{ with .Params.finnURL }}Interessert? Ta kontakt via <a href="{{ . | safeURL }}" class="link f4">annonsen på Finn.no</a>.{{ end }}
           </article>
-          {{ with .Params.tags }}
-          <ul class="list ph3 ph5-ns pv2 bt-l">
-            {{ range (sort .) }}
-            <li class="dib mr2">
-              <a  href="{{ printf "tags/%s" . | relURL }}" class="f6 ttu f5-ns b db pa2 link dim mid-gray">{{ . }}</a>
-            </li>
-            {{ end }}
-          </ul>
-          {{ end }}
         </span>
       </p>
     </div>

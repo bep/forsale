@@ -1,4 +1,4 @@
-{{ $img := (.Resources.ByType "image").GetMatch "featured*" }}
+{{ $img := (.Resources.ByType "image").GetMatch "*cover*" }}
 {{ if $img  }}
 {{ $img := $img.Fill "500x500" }}
 <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
@@ -8,7 +8,7 @@
       class="db bg-center cover aspect-ratio--object" />
     </div>
     <h3 class="f5 f4-ns mb0 black-90">{{ if .Params.sold }}<span class="f6 br2 ba bw1 ph3 pv2 mb2 dib red">Solgt</span> {{ end }}{{ .Title }}</h3>
-    <h3 class="f6 f5 fw4 mt2 black-60">Subtitle of piece {{ .Title }}</h3>
+    <h3 class="f6 f5 fw4 mt2 black-60">Subtitle</h3>
   </a>
 </article>
 {{ end }}
