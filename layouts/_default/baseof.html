@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Til Salgs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.9.1/tachyons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
-  <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
-</head>
-  <body class="w-100 sans-serif bg-white">
-  	{{block "main" .}}{{ end }}
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
-  </body>
+	<head>
+		<title>Til Salgs</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.9.1/tachyons.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+		<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	</head>
+	<body class="w-100 avenir bg-white">
+		<header class="bg-black-90 relative w-100 ph3 pv3 pv4-ns ph4-m ph5-l">
+			<nav class="f6 fw6 tracked">
+				{{ partial "breadcrumb" . }}
+			</nav>
+		</header>
+		<div>
+		{{block "main" .}}{{ end }}
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+	</body>
 </html>
