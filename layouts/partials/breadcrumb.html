@@ -5,5 +5,5 @@
 {{ else if not .p1.IsHome }}
 {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
 {{ end }}
-<a class="{{ if .p1.IsHome }}b ttu{{ else }}athelas{{ end }} link dim dib mr3{{ if eq .p1 .p2 }} white{{ else }} light-silver{{ end }}" href="{{ .p1.RelPermalink }}" title="{{ .p1.Title }}">{{ if not .p1.IsHome }} >> {{ end }}{{ .p1.Title }}</a>
+<a class="{{ if .p1.IsHome }}b ttu{{ else }}{{ end }} link dim dib mr3{{ if eq .p1 .p2 }} white{{ else }} light-silver{{ end }}" href="{{ .p1.RelPermalink }}" title="{{ .p1.Title }}">{{ if not .p1.IsHome }}⤐ {{ end }}{{ .p1.Title }}</a>
 {{ end }}

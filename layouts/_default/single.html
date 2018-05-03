@@ -2,7 +2,8 @@
 <section class="cf w-100 pa2-ns flex flex-wrap">
   <div class="fl w-100 w-50-l pr2-l pl2-ns mb4 mb0-l mb4">
     <div class="pa4">
-      <h1 class="f4 f2-l fw7 mt0 pv3-l bb-l bb--black">{{ .Title }}{{ if .Params.sold }} <span class="f6 br2 ba bw1 ph3 pv2 mb2 dib red v-top">Solgt</span> {{ end }}{{ with .Params.finnURL }} <a href="{{ . | safeURL }}" class="link f4 v-bottom">Annonse på Finn.no</a>{{ end }}</h1>
+      <h1 class="f4 f2-l fw7 mt0 pv3-l bb-l bb--black">{{ .Title }}{{ if .Params.sold }} <span class="f6 br2 ba bw1 ph3 pv2 mb2 dib red v-top">Solgt</span> {{ end }}</h1>
+      {{ with .Params.finnURL }}<h5><a href="{{ . | safeURL }}" class="link f4 v-bottom">Annonse på Finn.no</a>{{ end }}</h5>
       <p class="lh-copy mt2 mt3-m mt4-l f5">
         <span class="db-l measure-wide">
           <article class="pb5 f4">
@@ -14,15 +15,18 @@
     </div>
   </div>
   {{ range .Resources.ByType "image"}}
+  {{ $exif := partial "exif" . }}
   <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
-    <a data-fancybox="gallery" href="{{ .RelPermalink }}" class="ph2 ph0-ns pb3 link dim db">
+    <a data-lightbox="gallery" data-title="{{ .Title }}<br/>EXIF: {{ $exif }}" href="{{ .RelPermalink }}" class="ph2 ph0-ns pb3 link dim db">
       <div class="aspect-ratio aspect-ratio--1x1">
         {{ $img := .Fill "500x500" }}
         <img style="background-image:url({{ $img.RelPermalink }});"
         class="db bg-center cover aspect-ratio--object" />
       </div>
       <h3 class="f5 f4-ns mb0 black-90">{{ .Title }}</h3>
-      <h3 class="f6 f5 fw4 mt2 black-60">Subtitle of piece {{ .Title }}</h3>
+      <h3 class="f6 f5 fw4 mt2 black-60">
+         {{ $exif }}
+      </h3>
     </a>
   </article>
   {{ end }}

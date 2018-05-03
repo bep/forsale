@@ -1,0 +1,8 @@
+{{ if .EXIF }}
+<ul>
+	{{ $fields := slice "LensModel" "FNumber" "ShutterSpeedValue" "FocalLength" }}
+	{{ range $fields }}
+	<li>{{ . }}: {{ index $.EXIF.Values . }}</li>
+	{{ end }}
+</ul>
+{{ end }}

@@ -5,7 +5,7 @@
 		{{ .Hugo.Generator }}
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.9.1/tachyons.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="{{ "css/lightbox.min.css" | relURL }}">
 		<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 		{{ template "_internal/twitter_cards.html" . }}
 		{{ if not .Site.IsServer }}
@@ -25,8 +25,8 @@
 				{{ partial "breadcrumb" . }}
 			</nav>
 		</header>
-		<div>
+		<div class="nested-copy-line-height nested-headline-line-height nested-copy-separator nested-img nested-links">
 			{{block "main" .}}{{ end }}
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+			<script src="{{ "js/lightbox.min.js" | relURL }}"></script>
 		</body>
 	</html>
