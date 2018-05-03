@@ -17,7 +17,7 @@
   {{ range .Resources.ByType "image"}}
   {{ $exif := partial "exif" . }}
   <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
-    <a data-lightbox="gallery" data-title="{{ .Title }}<br/>EXIF: {{ $exif }}" href="{{ .RelPermalink }}" class="ph2 ph0-ns pb3 link dim db">
+    <a data-lightbox="gallery" data-title="{{ .Title }}<br/>{{ $exif | html }}" href="{{ .RelPermalink }}" class="ph2 ph0-ns pb3 link dim db">
       <div class="aspect-ratio aspect-ratio--1x1">
         {{ $img := .Fill "500x500" }}
         <img style="background-image:url({{ $img.RelPermalink }});"
