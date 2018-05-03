@@ -1,3 +1,5 @@
 ---
-title: Pentax
+title: Brukt Pentax
 ---
+
+Brukt Pentax kvalitetsoptikk til salgs.

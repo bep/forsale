@@ -1,3 +1,10 @@
 baseURL = "http://bep.is/forsale/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "For Sale"
+
+[blackfriday]
+hrefTargetBlank = true
+fractions = false
+
+[imaging]
+hugo041ExperimentEnableExif = true

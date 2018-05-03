@@ -1,6 +1,6 @@
 {{ $img := (.Resources.ByType "image").GetMatch "*cover*" }}
 {{ if $img  }}
-{{ $img := $img.Fill "500x500" }}
+{{ $img := $img.Fill "500x500 center" }}
 <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
   <a href="{{ .RelPermalink }}" class="ph2 ph0-ns pb3 link dim db">
     <div class="aspect-ratio aspect-ratio--1x1">

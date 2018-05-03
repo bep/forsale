@@ -3,12 +3,13 @@
   <div class="fl w-100 w-50-l pr2-l pl2-ns mb4 mb0-l mb4">
     <div class="pa4">
       <h1 class="f4 f2-l fw7 mt0 pv3-l bb-l bb--black">{{ .Title }}{{ if .Params.sold }} <span class="f6 br2 ba bw1 ph3 pv2 mb2 dib red v-top">Solgt</span> {{ end }}</h1>
-      {{ with .Params.finnURL }}<h5><a href="{{ . | safeURL }}" class="link f4 v-bottom">Annonse på Finn.no</a>{{ end }}</h5>
+      {{ with .Params.finnURL }}<h5><a href="{{ . | safeURL }}" class="link f4 v-bottom" target="_blank">Annonse på Finn.no</a>{{ end }}</h5>
       <p class="lh-copy mt2 mt3-m mt4-l f5">
         <span class="db-l measure-wide">
           <article class="pb5 f4">
             {{ .Content }}
-            {{ with .Params.finnURL }}Interessert? Ta kontakt via <a href="{{ . | safeURL }}" class="link f4">annonsen på Finn.no</a>.{{ end }}
+            {{ with .Params.finnURL }}Interessert? Ta kontakt via <a href="{{ . | safeURL }}" class="link f4" target="_blank">annonsen på Finn.no</a>.{{ end }}
+            {{ partial "prev-next-section.html" . }}
           </article>
         </span>
       </p>
@@ -19,7 +20,7 @@
   <article class="fl w-100 w-50-m  w-25-ns pa2-ns">
     <a data-lightbox="gallery" data-title="{{ .Title }}<br/>{{ $exif | html }}" href="{{ .RelPermalink }}" class="ph2 ph0-ns pb3 link dim db">
       <div class="aspect-ratio aspect-ratio--1x1">
-        {{ $img := .Fill "500x500" }}
+        {{ $img := .Fill "500x500 center" }}
         <img style="background-image:url({{ $img.RelPermalink }});"
         class="db bg-center cover aspect-ratio--object" />
       </div>
