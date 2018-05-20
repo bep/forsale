@@ -14,7 +14,7 @@ Kompakt, lyssterkt og svært skarpt objektiv. Fint til gate/reise-foto.
 Lite og svært pent brukt og i god stand. Alle bileta på denne sida -- bortsett frå dei der linsa er motivet -- er teke nyleg med denne linsa på eit Pentax K3 II kamera.
 
 * Ny pris er 1396 på [Japan Photo](https://www.japanphoto.no/pentax-smc-da-35mm-f-24-al)
-* Til salgs for **800 kr + frakt**.
+* Til salgs for **700 kr + frakt**.
 * Med front- og bakdeksel.
 
 For meir info om denne linsa, sjå https://www.dpreview.com/forums/thread/4193214
