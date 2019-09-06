@@ -1,11 +1,14 @@
-{{ if .Data.Exif }}
+{{ $enableExif := true }}
+{{ if $enableExif }}
+{{ if .Exif }}
 {{ $fields := slice "LensModel" "FNumber" "ExposureTime" "FocalLength" }}
 <table class="f6 w-100 mw8 center" cellspacing="0">
 	{{ range $fields }}
-	{{ $v :=  index $.Data.Exif.Values . }}
+	{{ $v :=  index $.Exif.Tags . }}
 	<tr class="stripe-dark">
 		<td class="pa1">{{ .}}</td><td class="pa1">{{ $v}}</td>
 	</tr>
 	{{ end }}
 </table>
+{{ end }}
 {{ end }}

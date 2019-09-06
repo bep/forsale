@@ -8,8 +8,6 @@ fractions = false
 
 [imaging]
 [imaging.exif]
-# Set this to enable Exif. We will consider making this the default later.
-hugo041ExperimentEnableExif = true
 
 # Regexp matching the fields you want to Exclude from the (massive) set of Exif info
 # available. As we cache this info to disk, this is for performance and
