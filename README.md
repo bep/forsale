@@ -4,6 +4,6 @@
 
 Just some promotional pages/images for items for sale.
 
-Deploys to https://temp.bep.is/forsale/
+Deploys to https://forsale1.netlify.com/
 
 
