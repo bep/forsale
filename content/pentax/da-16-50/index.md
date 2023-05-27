@@ -3,6 +3,7 @@ title = "Pentax DA* 16-50mm f/2.8 ED AL"
 finnURL = "https://www.finn.no/bap/forsale/ad.html?finnkode=119644722&fks=119644722"
 weight = 10
 sold = true
+expiryDate = 2020-12-12
 [[resources]]
 src = "*.jpg"
 title = "Pentax DA* 16-50mm f/2.8 ED AL #:counter"

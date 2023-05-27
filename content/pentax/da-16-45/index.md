@@ -2,6 +2,7 @@
 title = "Pentax 16-45mm f/4 DA ED AL"
 weight = 40
 sold = true
+expiryDate = 2020-12-12
 finnURL = "https://www.finn.no/bap/forsale/ad.html?finnkode=119646100&fks=119646100"
 [[resources]]
 src = "*.jpg"

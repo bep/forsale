@@ -2,6 +2,7 @@
 title = "Tamron SP 10-24mm f/3.5-4.5 Di II for Pentax"
 weight = 50
 sold = false
+expiryDate = 2020-12-12
 finnURL = "https://www.finn.no/bap/forsale/ad.html?finnkode=183081974"
 [[resources]]
 src = "*.jpg"

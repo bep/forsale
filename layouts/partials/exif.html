@@ -1,15 +1,15 @@
 {{ $enableExif := true }}
 {{ if $enableExif }}
-{{ if .Exif }}
-{{ $fields := slice "LensModel" "FNumber" "ExposureTime" "FocalLength" "Artist"}}
-<table class="f6 w-100 mw8 center" cellspacing="0">
-	{{ range $fields }}
-	{{ $v :=  index $.Exif.Tags . }}
-	<tr class="stripe-dark">
-		<td class="pa1">{{ .}}</td>
-		<td class="pa1">{{ $v}}</td>
-	</tr>
-	{{ end }}
-</table>
-{{ end }}
+  {{ if .Exif }}
+    {{ $fields := slice "LensModel" "FNumber" "ExposureTime" "FocalLength" "Artist" }}
+    <table class="f6 w-100 mw8 center" cellspacing="0">
+      {{ range $fields }}
+        {{ $v :=  index $.Exif.Tags . }}
+        <tr class="stripe-dark">
+          <td class="pa1">{{ . }}</td>
+          <td class="pa1">{{ $v }}</td>
+        </tr>
+      {{ end }}
+    </table>
+  {{ end }}
 {{ end }}

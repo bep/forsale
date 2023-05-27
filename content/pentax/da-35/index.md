@@ -3,6 +3,8 @@ title = "Pentax DA 35mm F2.4 AL"
 finnURL = "https://www.finn.no/bap/forsale/ad.html?finnkode=119646745&fks=119646745"
 weight = 35
 sold = true
+expiryDate = 2020-12-12
+
 [[resources]]
 src = "*.jpg"
 title = "Pentax DA 35mm F2.4 AL #:counter"
