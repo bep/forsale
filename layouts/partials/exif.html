@@ -1,7 +1,7 @@
 {{ $enableExif := true }}
 {{ if $enableExif }}
   {{ if .Exif }}
-    {{ $fields := slice "LensModel" "FNumber" "ExposureTime" "FocalLength" "Artist" }}
+    {{ $fields := slice "LensModel" "Model" "FNumber" "ExposureTime" "FocalLength" "Artist" }}
     <table class="f6 w-100 mw8 center" cellspacing="0">
       {{ range $fields }}
         {{ $v :=  index $.Exif.Tags . }}
