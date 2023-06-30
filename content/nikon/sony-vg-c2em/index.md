@@ -1,7 +1,7 @@
 +++
 title = "Sony VG-C2EM vertikalgrep til A7Sii, A7ii, A7Rii"
 weight = 10
-finnURL = "TODO"
+finnURL = "https://www.finn.no/bap/forsale/ad.html?finnkode=309103628"
 [[resources]]
 src = "*.jpg"
 title = "Sony VG-C2EM #:counter"

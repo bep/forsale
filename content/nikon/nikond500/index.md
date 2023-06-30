@@ -1,7 +1,7 @@
 +++
 title = "Nikon D500"
 weight = 10
-finnURL = "TODO"
+finnURL = "https://www.finn.no/bap/forsale/ad.html?finnkode=309101957"
 [[resources]]
 src = "*.jpg"
 title = "Nikon D500  #:counter"

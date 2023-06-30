@@ -1,7 +1,7 @@
 +++
 title = "Nikon 200-400mm f/4 VR"
 weight = 10
-finnURL = "TODO"
+finnURL = "https://www.finn.no/bap/forsale/ad.html?finnkode=309101111"
 [[resources]]
 src = "*.jpg"
 title = "Nikon 200-400mm f/4 VR  #:counter"

@@ -1,7 +1,7 @@
 +++
 title = "Tokina AT-X PRO DX 12-24mm f4 Nikon"
 weight = 10
-finnURL = "TODO"
+finnURL = "https://www.finn.no/bap/forsale/ad.html?finnkode=309102863"
 [[resources]]
 src = "*.jpg"
 title = "Tokina AT-X PRO DX 12-24mm #:counter"
